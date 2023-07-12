@@ -34,7 +34,7 @@ class Principal extends Controller {
                 $res = array('msg' => 'Los datos ingresados son incorrectos', 'type' => 'warning');
             }
         } else {
-            $res = array('msg' => 'El correo ingresado no existe', 'type' => 'warning');
+            $res = array('msg' => 'El usuario no existe', 'type' => 'warning');
         }
         echo json_encode($res, JSON_UNESCAPED_SLASHES);
         die();

@@ -6,3 +6,6 @@
     margin-right: 0px;
     margin-left: 0px;
 }
+.select2-selection.select2-selection--multiple {
+    padding: 9px 9px !important;
+}

@@ -12,6 +12,7 @@ class Usuarios extends Controller {
     {
         $data['title'] = 'Usuarios';
         $data['script'] = 'usuarios.js';
+        $data['active'] = 'usuarios';
         $this->views->getView('usuarios', 'index', $data);
     }
 

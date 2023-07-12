@@ -1,7 +1,7 @@
 <?php include_once 'Views/templates/header.php' ?>
 
             <div class="app-content">
-                <?php include 'Views/templates/menu.php'; ?>
+                <?php include 'Views/components/menu.php'; ?>
                 <div class="content-wrapper">
                     <div class="container">
                         <div class="row">

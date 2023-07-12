@@ -3,8 +3,9 @@
 // echo password_hash('admin', PASSWORD_DEFAULT);
 // exit();
 
-require_once 'Config/Config.php';
 require_once 'Config/App/Autoload.php';
+require_once 'Config/Config.php';
+require_once 'Config/Functions.php';
 
 $ruta = !empty($_GET['url']) ? $_GET['url'] : "principal/index";
 $array = explode("/", $ruta);

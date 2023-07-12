@@ -23,6 +23,8 @@
     <link href="<?=BASE_URL?>Assets/plugins/pace/pace.css" rel="stylesheet">
     <!-- datatables -->
     <link href="<?=BASE_URL?>Assets/plugins/DataTables/datatables.min.css" rel="stylesheet">
+    <!-- select2 -->
+    <link href="<?=BASE_URL?>Assets/plugins/select2/select2.min.css" rel="stylesheet">
     
     <!-- Theme Styles -->
     <link href="<?=BASE_URL?>Assets/css/main.min.css" rel="stylesheet">

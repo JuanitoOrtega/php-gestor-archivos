@@ -10,6 +10,9 @@
     <script src="<?=BASE_URL?>Assets/plugins/pace/pace.min.js"></script>
     <!-- datatables -->
     <script src="<?=BASE_URL?>Assets/plugins/DataTables/datatables.min.js"></script>
+    <!-- select2 -->
+    <script src="<?=BASE_URL?>Assets/plugins/select2/select2.min.js"></script>
+    <script src="<?=BASE_URL?>Assets/plugins/select2/es.min.js"></script>
     <script src="<?=BASE_URL?>Assets/js/main.min.js"></script>
     <!-- moment -->
     <script src="<?=BASE_URL?>Assets/plugins/moment/moment.min.js"></script>
