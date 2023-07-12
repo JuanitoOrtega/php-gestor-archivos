@@ -27,6 +27,7 @@ class Compartidos extends Controller {
     public function verDetalle($id_detalle)
     {
         $data = $this->model->getDetalle($id_detalle);
+        $data['destinatario'] = $this->model->getDestinatario($data['correo']);
         $data['fecha'] = time_ago(strtotime($data['added_at']));
         echo json_encode($data, JSON_UNESCAPED_UNICODE);
         die();

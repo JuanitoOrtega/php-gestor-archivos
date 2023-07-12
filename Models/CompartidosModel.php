@@ -8,7 +8,7 @@ class CompartidosModel extends Query {
 
     public function getArchivosCompartidos($correo)
     {
-        $sql = "SELECT d.*, a.nombre AS nombre_archivo, u.nombre AS nombre_usuario
+        $sql = "SELECT d.*, a.nombre AS nombre_archivo, CONCAT(u.nombre, ' ', u.apellido) AS nombre_usuario
         FROM detalle_archivos d
         INNER JOIN archivos a ON d.id_archivo = a.id
         INNER JOIN usuarios u ON d.id_usuario = u.id
@@ -24,6 +24,12 @@ class CompartidosModel extends Query {
         INNER JOIN carpetas c ON a.id_carpeta = c.id
         INNER JOIN usuarios u ON d.id_usuario = u.id
         WHERE d.id = $id_detalle";
+        return $this->select($sql);
+    }
+
+    public function getDestinatario($correo)
+    {
+        $sql = "SELECT * FROM usuarios WHERE correo = '$correo'";
         return $this->select($sql);
     }
 }

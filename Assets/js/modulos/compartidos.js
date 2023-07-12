@@ -30,7 +30,7 @@ function verDetalle(id_detalle) {
                 <img src="${base_url}Assets/images/avatars/avatar.png" alt="">
                 <div class="mailbox-open-author-info">
                     <span class="mailbox-open-author-info-email d-block">${res.correo}</span>
-                    <span class="mailbox-open-author-info-to">De <span class="badge badge-info align-self-center">${res.nombre_usuario}</span></span>
+                    <span class="mailbox-open-author-info-to">Para <span class="badge badge-info align-self-center">${res.destinatario.nombre + ' ' + res.destinatario.apellido}</span></span>
                 </div>
                 <div class="mailbox-open-actions">
                     <a href="#" class="btn btn-primary">Forward</a>
